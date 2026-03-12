@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,8 @@
     <title>Just For You ❤️</title>
     
     <style>
-        /* This styles the background and centers everything */
         body {
-            background-color: #1a1a2e; /* A sleek, dark night-sky color */
+            background-color: #1a1a2e;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,19 +18,17 @@
             text-align: center;
         }
 
-        /* This is the CSS magic to draw a heart shape */
         .heart {
             position: relative;
             width: 100px;
             height: 100px;
             background-color: #e90052;
             transform: rotate(-45deg);
-            animation: beat 1.2s infinite; /* Connects to the animation below */
+            animation: beat 1.2s infinite;
             margin-bottom: 60px;
-            box-shadow: 0 0 40px #e90052; /* Gives the heart a nice glow */
+            box-shadow: 0 0 40px #e90052;
         }
 
-        /* The rounded top parts of the heart */
         .heart::before, .heart::after {
             content: "";
             position: absolute;
@@ -51,7 +48,6 @@
             left: 50px;
         }
 
-        /* This creates the beating animation effect */
         @keyframes beat {
             0% { transform: scale(1) rotate(-45deg); }
             20% { transform: scale(1.2) rotate(-45deg); }
@@ -60,7 +56,6 @@
             100% { transform: scale(1) rotate(-45deg); }
         }
 
-        /* Styling for your message */
         h1 {
             color: white;
             font-size: 3.5rem;
@@ -72,6 +67,14 @@
             color: #ffb3c6;
             font-size: 1.5rem;
             font-style: italic;
+            margin-bottom: 30px; /* Added a little space below the text */
+        }
+
+        /* I added this styling to make sure your photo looks nice and fits on a phone screen */
+        img {
+            max-width: 80%; /* Stops the image from being too wide */
+            border-radius: 15px; /* Gives the photo nice rounded corners */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Adds a soft shadow behind the picture */
         }
     </style>
 </head>
@@ -81,6 +84,8 @@
 
     <h1>I love you, bby! ❤️</h1>
     <p>You mean the world to me.</p>
+
+    <img src="YOUR-PHOTO-NAME.jpg" alt="A picture of us">
 
 </body>
 </html>
